@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+	<!-- <bean id="Ao" class="com.Arun.A" >
+		<property name  ="a" value="10" />
+		<property name="msg" value="Hello Guys" />
+	</bean> -->
+		<bean id="Aobj" class="com.Arun.A" >
+		<property name  ="a" value="10" />
+		<property name="msg" value="Hello Guys" />
+	</bean>
+	
+	<bean id="Bo" class="com.Arun.B">
+		<constructor-arg value="88" />
+		<constructor-arg value="Hai Guys" />
+	</bean>
+	
+	<bean id="Bobj" class="com.Arun.B">
+		<constructor-arg value="88" />
+		<constructor-arg value="Hai Arun Guys" />
+	</bean>
+	
+	<bean id="hello" class="com.Arun.Hello" autowire="constructor"/>
+	
+</beans>
+  
